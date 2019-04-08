@@ -1,0 +1,671 @@
+.header
+  height: 145px
+  display: flex
+  align-items: center
+  position: relative
+  background-color: transparent
+
+  .container
+    padding: 0 60px
+    max-width: 1800px
+  &__row
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 60px
+  &__btn
+    position: relative
+    display: flex
+    width: 635px
+    justify-content: space-between
+    &::after
+      content: ''
+      position: absolute
+      width: 760px
+      height: 145px
+      background-color: #2e0b25
+      right: -60px
+      top: -61px
+      z-index: 1
+  &__social
+    z-index: 100
+    a
+      margin-right: 25px
+      color: #fff
+      top: 0
+      left: 0
+
+  &__hamb
+    color: #fff
+    cursor: pointer
+    z-index: 222
+  &__logo
+    position: relative
+    z-index: 100
+    a
+      position: absolute
+
+.slider
+  height: 1120px
+  background: url("/assets/directions/slider-bg.png")
+  background-size: cover
+  padding-top: 145px
+  position: relative
+  top: -145px
+  .container
+    position: relative
+    display: flex
+    height: 100%
+  &__img-wrap
+    height: 980px
+    max-width: 840px
+    width: 100%
+    left: 190px
+    position: absolute
+    top: 140px
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+
+  &__scroll-wrap
+    background-color: #2e0b25
+    width: 112px
+    height: 240px
+    position: absolute
+    left: 0
+    bottom: 0
+
+  &__scroll-down
+    position: absolute
+    bottom: 100px
+    left: -15px
+    right: 0
+    margin: auto
+    width: 145px
+    transform: rotate(90deg)
+    display: flex
+    align-items: center
+    cursor: pointer
+    span
+      font-family: 'Myriad Pro Bold'
+      color: #ffffff
+      line-height: 1
+      font-size: 12px
+
+  &__scroll--dots
+    margin-left: 20px
+    border-radius: 10px
+    width: 25px
+    border: 2px solid #fff
+    height: 18px
+    position: relative
+    top: -1px
+    &:after
+      content: ""
+      width: 5px
+      height: 2px
+      background: #fff
+      position: absolute
+      left: 5px
+      top: 6px
+      transition: .5s
+  .inner-container
+    margin: auto 140px auto auto
+    position: relative
+    z-index: 20
+  &__text
+    color: white
+    font-size: 82px
+    line-height: 1
+    font-family: 'Myriad Pro Regular'
+    margin-bottom: 65px
+    width: 720px
+
+  &__title
+    font-size: 16px
+    font-family: 'OpenSans Bold'
+    color: white
+    letter-spacing: 5px
+    position: relative
+    padding-left: 95px
+    margin-bottom: 45px
+    text-transform: uppercase
+    &:after
+      content: ''
+      position: absolute
+      width: 3px
+      left: 0
+      top: 2px
+      height: 15px
+      background-color: white
+
+  &__text-link
+    font-size: 12px
+    color: white
+    font-family: 'OpenSans SemiBold'
+    position: relative
+    text-transform: uppercase
+    letter-spacing: 3px
+    &:hover
+      text-decoration: none
+      color: white
+    &:after
+      content: ''
+      position: absolute
+      width: 100%
+      left: 0
+      bottom: -20px
+      height: 1px
+      background-color: white
+
+.abilities
+  position: relative
+  top: -145px
+  .container
+    position: relative
+    &:after
+      content: ''
+      position: absolute
+      top: -85px
+      left: 50%
+      transform: translate(-50%, 0)
+      height: 100%
+      width: 29%
+      background-color: #461f3c
+      z-index: 10
+  &__title
+    font-size: 74px
+    font-family: 'Myriad Pro Regular'
+    text-align: center
+    color: white
+    padding-right: 8%
+    line-height: .8
+    position: relative
+    z-index: 20
+    strong
+      font-family: 'Myriad Pro Bold'
+    margin-bottom: 170px
+  &__wrap
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    margin-left: 130px
+  &__unit
+    display: flex
+    max-width: 33%
+    margin-bottom: 130px
+    align-items: center
+    position: relative
+    z-index: 20
+    &:nth-child(3n+2)
+      h2, p
+        color: white
+
+  &__number
+    font-family: 'Myriad Pro Bold'
+    font-size: 170px
+    color: #461f3c
+    line-height: 1
+  &__text
+    font-family: 'Myriad Pro Regular'
+    font-size: 18px
+    padding-left: 50px
+    padding-right: 110px
+
+.info
+  position: relative
+  margin-top: 50px
+  &:after
+    content: ''
+    height: 10px
+    width: 100%
+    background-color: #461f3c
+    position: absolute
+    left: 0
+    right: 0
+    top: 50%
+    transform: translate(0, -50%)
+  .container
+    display: flex
+    justify-content: space-evenly
+  &__unit
+    width: 200px
+    display: flex
+    flex-direction: column
+    &:nth-child(even)
+      .info__img-wrap
+        order: 2
+        margin-bottom: 0
+      .info__text
+        order: 1
+        margin-bottom: 10px
+
+
+  &__img-wrap
+    background-color: #461f3c
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-bottom: 10px
+    height: 200px
+
+  &__text
+    font-family: 'Myriad Pro Regular'
+    font-size: 18px
+    height: 200px
+    margin: 0
+    display: flex
+    text-align: center
+    align-items: center
+
+
+.services
+  background-color: white
+  margin-top: 190px
+  margin-bottom: 120px
+  .inner-container
+    display: flex
+    flex-direction: column
+  &__row
+    &:first-child
+      margin-bottom: 140px
+      h2
+        display: inline-block
+        font-family: 'OpenSans Bold'
+        font-size: 15px
+        color: black
+        position: relative
+        padding: 10px 60px
+        border-bottom: 1px solid black
+        text-transform: uppercase
+      p
+        font-size: 36px
+        font-family: 'Myriad Pro Regular'
+        color: black
+        padding-left: 95px
+        display: block
+        max-width: 665px
+        width: 100%
+    &:last-child
+      display: flex
+      justify-content: space-between
+      img
+        margin-bottom: 30px
+      h2
+        color: black
+        font-size: 18px
+        font-family: 'Myriad Pro Regular'
+        margin-bottom: 30px
+      p
+        color: black
+        font-size: 14px
+        font-family: 'OpenSans Regular'
+        text-align: justify
+        padding-right: 100px
+.footer
+  padding: 135px 0
+  background-color: #181818
+  .inner-container
+    display: flex
+    align-items: flex-start
+    flex-flow: wrap
+  &__row
+    flex: 1
+    h2
+      font-size: 14px
+      color: #ffffff
+      text-transform: uppercase
+      font-family: 'Myriad Pro Bold'
+    a, p
+      color: #616b72 !important
+      font-size: 15px
+      font-family: 'Myriad Pro Regular'
+    a
+      display: inline-flex
+      width: 100%
+      padding: 0 100px
+      text-transform: capitalize
+    &:first-child
+      p
+        padding-right: 50px
+        &:nth-of-type(1)
+          margin-top: 30px
+        &:nth-of-type(2)
+          margin-bottom: 50px
+        &:nth-last-of-type(1)
+          margin-bottom: 90px
+    &:nth-child(2)
+      h2
+        padding: 0 100px
+    &:nth-child(3)
+      h2
+        padding: 0 100px
+    &:nth-child(4)
+      h2, a
+        padding: 0 25px 0 100px
+  &__social
+    z-index: 100
+    a
+      width: auto
+      display: inline-block
+      padding: 0
+      margin-right: 25px
+      color: #fff !important
+      top: 0
+      left: 0
+  &__social-mobile
+    display: none
+
+@media screen and (max-width: 1680px)
+  .container
+
+
+  .slider
+
+    .container
+
+    &__img-wrap
+
+      img
+
+
+    &__scroll-wrap
+
+
+    &__scroll-down
+
+      span
+
+
+    &__scroll--dots
+
+      &:after
+
+    .inner-container
+
+    &__text
+
+
+    &__title
+
+      &:after
+
+
+    &__text-link
+
+      &:hover
+
+      &:after
+
+  .abilities
+
+    .container
+
+      &:after
+
+    &__title
+
+      strong
+
+    &__wrap
+      margin-left: 30px
+
+    &__unit
+
+      &:nth-child(3n+2)
+        h2, p
+
+    &__number
+
+    &__text
+      padding: 0 30px
+
+
+  .info
+
+    &:after
+
+    .container
+
+    &__unit
+
+      &:nth-child(even)
+        .info__img-wrap
+
+        .info__text
+
+    &__img-wrap
+
+    &__text
+
+  .services
+
+    .inner-container
+
+    &__row
+      &:first-child
+
+        h2
+
+        p
+
+      &:last-child
+
+        img
+
+        h2
+
+        p
+
+@media screen and (max-width: 1199px)
+  .container
+    padding: 0 40px
+
+  .header
+    background-color: #2e0b25
+    position: fixed
+    width: 100%
+    z-index: 999
+    .container
+      padding: 0 40px
+
+    &__btn
+      width: auto
+
+      &::after
+        display: none
+
+    &__social
+      display: none
+
+    &__logo
+
+      a
+        display: inline-block
+        position: static
+        width: 200px
+        height: 100px
+      img
+        width: 100%
+        height: 100%
+
+  .slider
+    background-image: url("/assets/directions/slider-bg-light.png")
+    height: 1130px
+    top: 0
+
+    .container
+
+    &__img-wrap
+      left: 0
+      top: 175px
+      max-width: 480px
+      height: 880px
+
+      border-bottom: 7px solid #b978a8
+
+      img
+
+
+    &__scroll-wrap
+      display: none
+
+    .inner-container
+
+
+    &__text
+
+
+    &__title
+
+      &:after
+
+
+    &__text-link
+
+      &:hover
+
+      &:after
+
+  .abilities
+    margin-top: 160px
+    top: 0
+
+    .container
+
+      &:after
+        display: none
+
+    &__title
+      color: black
+
+      strong
+
+
+    &__wrap
+      margin-left: 30px
+
+
+    &__unit
+      max-width: 50%
+      width: 100%
+
+      &:nth-child(3n+2)
+        h2, p
+          color: #461f3c
+
+    &__number
+
+    &__text
+      width: 220px
+      padding: 0 30px
+
+
+  .info
+
+    &:after
+      width: 10px
+      height: 100%
+      left: 50%
+      top: 0
+      transform: translate(-50%, 0)
+
+    .container
+      flex-direction: column
+
+    &__unit
+      flex-direction: row
+      width: calc(100% + 80px)
+      position: relative
+      left: -40px
+
+      &:nth-child(even)
+        .info__img-wrap
+          margin-right: 0
+          margin-left: 10px
+
+        .info__text
+
+    &__img-wrap
+      width: 50%
+      margin-bottom: 0
+      margin-right: 10px
+
+    &__text
+      width: 50%
+      justify-content: center
+      padding: 0 90px
+
+  .services
+    .inner-container
+      padding: 0 40px
+
+    &__row
+      &:first-child
+        margin-bottom: 100px
+
+      &:last-child
+        flex-direction: column
+        padding-left: 95px
+        margin-bottom: 140px
+
+        p
+          padding-right: 50%
+
+    &__unit
+      margin-bottom: 80px
+      &:last-child
+        margin-bottom: 0
+
+  .footer
+    padding: 90px 0 55px
+
+    .inner-container
+      margin-bottom: 80px
+
+    &__row
+
+      h2
+        padding: 0 50px
+
+      a, p
+        padding: 0 50px
+
+      a
+
+      &:first-child
+        display: none
+
+      &:nth-child(2)
+        h2
+          padding: 0 50px
+
+      &:nth-child(3)
+        h2
+          padding: 0 50px
+      &:nth-child(4)
+        h2, a
+          padding: 0 50px
+    &__social
+      a
+        padding: 0
+    &__social-mobile
+      display: flex
+      position: relative
+      justify-content: center
+      align-items: center
+      a
+        color: white
+        margin-right: 25px
+
+
+
+
+
+
+
+
+
+
